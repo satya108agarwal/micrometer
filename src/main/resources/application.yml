@@ -1,17 +1,28 @@
-
-
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+        # Specifies that all management endpoints (e.g., /actuator/health, /actuator/metrics, /actuator/prometheus) are exposed over HTTP.
+        # The wildcard '*' indicates full visibility into all available management endpoints.
+
   endpoint:
     metrics:
       enabled: true
+      # Enables the /actuator/metrics endpoint, which provides various metrics related to the application's performance and health.
+
     prometheus:
       enabled: true
+      # Enables the /actuator/prometheus endpoint, exposing metrics in a format compatible with Prometheus for collection and visualization.
+
     health:
       show-details: always
+      # Configures the /actuator/health endpoint to always show detailed health information in its response.
+      # This helps in debugging and understanding the application's health status comprehensively.
+
 spring:
   application:
-    name: micrometerexample
+    name: micrometer-example
+    # Sets the name of the Spring Boot application to 'micrometer-example'.
+    # This name is used in various contexts such as logging, monitoring, and generating metrics for identification.
+
