@@ -117,7 +117,7 @@ Refer: https://docs.vmware.com/en/VMware-Tanzu-Application-Service/6.0/tas-for-v
 
 ### Reference Documentation
 For further reference, please consider the following sections:
-
+* [Metrics Registrar Official Doc](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/6.0/tas-for-vms/metric-registrar-using.html)
 * [Official Gradle documentation](https://docs.gradle.org)
 * [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.3.1/gradle-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.3.1/gradle-plugin/reference/html/#build-image)
