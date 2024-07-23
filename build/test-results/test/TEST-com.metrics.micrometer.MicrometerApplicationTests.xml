@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.metrics.micrometer.MicrometerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-22T20:49:45" hostname="N43VCMF3LX" time="0.473">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.metrics.micrometer.MicrometerApplicationTests" time="0.473"/>
+  <system-out><![CDATA[16:49:44.811 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.metrics.micrometer.MicrometerApplicationTests]: MicrometerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:49:44.858 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.metrics.micrometer.MicrometerApplication for test class com.metrics.micrometer.MicrometerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-07-22T16:49:45.035-04:00  INFO 54409 --- [micrometer-example] [    Test worker] c.m.m.MicrometerApplicationTests         : Starting MicrometerApplicationTests using Java 17.0.9 with PID 54409 (started by satyaagarwal in /Users/satyaagarwal/Downloads/micrometer)
+2024-07-22T16:49:45.036-04:00  INFO 54409 --- [micrometer-example] [    Test worker] c.m.m.MicrometerApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-07-22T16:49:45.542-04:00  INFO 54409 --- [micrometer-example] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-22T16:49:45.738-04:00  INFO 54409 --- [micrometer-example] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2024-07-22T16:49:45.771-04:00  INFO 54409 --- [micrometer-example] [    Test worker] c.m.m.MicrometerApplicationTests         : Started MicrometerApplicationTests in 0.864 seconds (process running for 1.399)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
