@@ -77,7 +77,8 @@ cf install-plugin -r CF-Community "metric-registrar"
 ```
 ## Step 2: Register the metrics endpoint of the app by running:
 ```bash
-cf register-metrics-endpoint spring-metrics-registrar /actuator/prometheus --insecure
+# **Note**: Replace the <APP-NAME> with the app name from manifest.yml
+cf register-metrics-endpoint <APP-NAME> /actuator/prometheus --insecure
 ```
 
 ## Step 3: Install the Log Cache CLI by running:
@@ -89,7 +90,7 @@ Log Cache is a component of TAS for VMs that caches logs and metrics from across
 
 ## Step 4 :View the app metrics as they are emitted running this command. The --follow flag appends output as metrics are emitted.
 ```bash 
-cf tail spring-metrics-registrar --envelope-class metrics --follow
+cf tail <APP-NAME> --envelope-class metrics --follow
 ```
 
 
@@ -103,8 +104,9 @@ cf tail spring-metrics-registrar --envelope-class metrics --follow
 The output looks similar to the following example. The custom metric displays in the output.
 
 
-```angular2html
-cf tail spring-metrics-registrar --envelope-class metrics --follow | grep custom
+```bash
+# **Note**: Replace the <APP-NAME> with the app name from manifest.yml
+cf tail <APP-NAME> --envelope-class metrics --follow | grep custom
    2024-07-22T17:13:39.59-0400 [spring-metrics-registrar/0] GAUGE custom:1.000000
 ```
 
